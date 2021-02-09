@@ -5,5 +5,15 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
 })
 export class AppComponent {
-  title = 'data-binding';
+  valor: number = 5;
+
+  deletarCiclo: boolean = false;
+
+  mudarValor() {
+    this.valor++;
+  }
+
+  destruirCiclo() {
+    this.deletarCiclo = true;
+  }
 }
